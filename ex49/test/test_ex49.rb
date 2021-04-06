@@ -4,6 +4,7 @@ require_relative '../lib/ex49'
 class ParserTests < Test::Unit::TestCase
 
 	Pair = Struct.new(:token, :word)
+# 	//Pair = Struct.new(:token, :word)
 
     def test_parse_verb()
         assert_raise(ParserError){Parser.parse_verb([false])}
